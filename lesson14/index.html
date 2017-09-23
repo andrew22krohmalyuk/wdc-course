@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>HomewWorks</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel">Lesson 14 | Adaptive Fade Slider </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-row">
+                <div id="s1" class="slide active" style="background: url(img/img-1.jpeg)"></div>
+                <div id="s2" class="slide active" style="background: url(img/img-2.jpeg)"></div>
+                <div id="s3" class="slide active" style="background: url(img/img-3.jpeg)"></div>
+                <div id="s4" class="slide active" style="background: url(img/img-4.jpeg)"></div>
+                <div id="s5" class="slide active" style="background: url(img/img-5.jpeg)"></div>
+            </div>
+            <div class="nav-dots">
+                <a data-slide="1" href="#"></a>
+                <a data-slide="2" href="#"></a>
+                <a data-slide="3" href="#"></a>
+                <a data-slide="4" href="#"></a>
+                <a data-slide="5" href="#"></a>
+            </div>
+            <a class="arrow left"><img src="img/icons/arrow-left.svg"></a>
+            <a class="arrow right"><img src="img/icons/arrow-right.svg"></a>
+        </div>
+
+        <div class="container">
+            <div class="panel">Lesson 15 | Inputs & Custom CheckBoxes </div>
+            <div class="input-group">
+                <span class="label" type="text">Mail</span>
+                <input type="text">
+                <a href="#" class="btn">Send</a>
+            </div>
+            <div class="input-list">
+                <input type="checkbox">
+                <input type="radio">
+                <input class="switch" type="checkbox">
+            </div>
+
+            <div class="panel">Lesson 16 | Range & ProgressBar
+                <div class="range-container">
+                    <span class="value">0</span>
+                    <input class="range" type="range" min="0" max="100">
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/range.js"></script>
+    </body>
+</html>

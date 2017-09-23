@@ -1,0 +1,133 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+.test {
+  clear: both;
+  width: 600px;
+  margin-left: 100px;
+}
+.accordeon {
+  display: block;
+  width: 300px;
+  margin: 50px 100px;
+}
+.accordeon .list-item .item-title {
+  background: #3498db;
+  color: #fff;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+.accordeon .list-item .item-title:after {
+  position: absolute;
+  content: "";
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/arrow.svg) no-repeat center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transition: all 0.2s ease-out;
+}
+.accordeon .list-item .item-title.active:after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.accordeon .list-item .content {
+  padding: 10px 20px;
+  line-height: 170%;
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+}
+.accordeon .list-item .content ul {
+  padding-left: 25px;
+}
+.accordeon .list-item .content ul li a {
+  cursor: pointer;
+  color: #777;
+  font-size: 18px;
+}
+.accordeon .list-item .content ul li a.active {
+  color: #3498db;
+}
+.accordeon .list-item .content ul li a.active:hover {
+  color: #3498db;
+}
+.accordeon .list-item .content ul li a:hover {
+  cursor: pointer;
+  color: #000;
+}
+.accordeon .list-item .content ul:after {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 20px;
+  content: "";
+  width: 1px;
+  background: #ccc;
+}
+.tab-container {
+  float: left;
+  width: 500px;
+  margin: 50px 100px;
+}
+.tab-container .tabs {
+  overflow: auto;
+}
+.tab-container .tabs .tab {
+  display: inline-block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #bbb;
+  float: left;
+  color: #bbb;
+  cursor: pointer;
+}
+.tab-container .tabs .tab.active {
+  color: #222;
+  border-bottom-color: #3498db;
+}
+.tab-container .tab-content {
+  margin-top: 10px;
+  position: relative;
+}
+.tab-container .tab-content .content {
+  line-height: 170%;
+  color: #222;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.tab-container .tab-content .content.active {
+  opacity: 1;
+  visibility: visible;
+  position: static;
+}

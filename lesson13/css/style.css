@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+.slider-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.slider-container .slider-row {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  transition: all 0.3s ease-out;
+}
+.slider-container .slider-row .slide {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.slider-container .slider-row .slide > img {
+  width: 100vw;
+  height: 100vh;
+}
+.slider-container .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.slider-container .arrow > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+.slider-container .arrow.left {
+  left: 0;
+}
+.slider-container .arrow.right {
+  right: 0;
+}

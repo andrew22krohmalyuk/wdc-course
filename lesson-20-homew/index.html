@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/modal-plugin.css">
+        <link rel="stylesheet" href="css/slider-plugin.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson 20</title>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="wrapper">
+                <div class="title">Lesson 20</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="slider-container">
+                <div class="slider-row">
+                    <div class="slide" style="background: url(img/img-1.jpeg)"></div>
+                    <div class="slide" style="background: url(img/img-2.jpeg)"></div>
+                    <div class="slide" style="background: url(img/img-3.jpeg)"></div>
+                    <div class="slide" style="background: url(img/img-4.jpeg)"></div>
+                    <div class="slide" style="background: url(img/img-5.jpeg)"></div>
+                </div>
+                <div class="nav-dots">
+                    <a data-slide="1"></a>
+                    <a data-slide="2"></a>
+                    <a data-slide="3"></a>
+                    <a data-slide="4"></a>
+                    <a data-slide="5"></a>
+                </div>
+                <div class="arrow left">
+                    <img src="img/left.svg">
+                </div>
+                <div class="arrow right">
+                    <img src="img/right.svg">
+                </div>
+            </div>
+            <div class="wrapper">
+                <a class="btn" data-modal="#m1">Open Modal</a>
+            </div>
+        </div>
+
+        <div class="footer"></div>
+        <div class="modal-container">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="modal-title">Внимание</div>
+                    <div class="close" data-modal="close"></div>
+                </div>
+                <div class="modal-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/slider-plugin.js"></script>
+        <script src="js/modal-plugin.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

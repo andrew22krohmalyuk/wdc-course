@@ -1,0 +1,47 @@
+.tab-container {
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+}
+.tab-container .tabs {
+  margin-top: 30px;
+}
+.tab-container .tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-container .tabs .tab {
+  float: left;
+  padding: 10px 20px;
+  color: #bbb;
+  border: 1px solid transparent;
+  border-bottom-color: #dadada;
+  cursor: pointer;
+}
+.tab-container .tabs .tab.active {
+  color: #000;
+  border-color: #dadada;
+  border-bottom-color: transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.tab-container .tab-content {
+  margin-top: 10px;
+  position: relative;
+}
+.tab-container .tab-content .content {
+  opacity: 0;
+  visibility: hidden;
+  line-height: 170%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.tab-container .tab-content .content.active {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+}

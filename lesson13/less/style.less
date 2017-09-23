@@ -1,0 +1,70 @@
+//"out":"../css/style.css"
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    // position: relative;
+
+    .slider-row{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        //width: 10000px;
+        height: 100vh;
+        transition: all .3s ease-out;
+
+        .slide {
+            float: left;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            & > img {
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        background: rgba(0, 0, 0, .5);
+        cursor: pointer;
+
+
+        & > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
+}

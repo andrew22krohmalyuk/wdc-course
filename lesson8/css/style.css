@@ -1,0 +1,107 @@
+body {
+    background: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-box {
+    width: 45%;
+    height: 630px;
+    background: #fff;
+    display: inline-block;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    color: #3498db;
+}
+.right-box {
+    width: 45%;
+    height: 630px;
+    background: #fff;
+    display: inline-block;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+}
+.title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #3498db;
+}
+
+.btn-container {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 140px;
+}
+
+.content {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    width: 530px;
+    height: 520px;
+    position: relative;
+}
+
+.table-container {
+    padding-top: 50px;
+    overflow: hidden;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+table td {
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+}
+table thead th {
+    padding: 15px 25px;
+    background: #3498db;
+}
+thead {
+    color: #ecf0f1;
+}
+tr:nth-child(2n+1) {
+    background: #eee;
+   }
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #3498db;
+    border-radius: 3px;
+    border-bottom: 3px solid #1175c5;
+    border-right: 2px solid #1175c5;
+}
+.btn:hover {
+    background: #0e5d9c;
+    border-bottom: 3px solid #0b416b;
+    border-right: 2px solid #0b416b;
+}
+.btn:active {
+    border: none;
+    margin-top: 3px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;

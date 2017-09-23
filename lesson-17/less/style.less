@@ -1,0 +1,108 @@
+//"out":"../css/style.css"
+
+@blue: #2980b9;
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #fff;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+body {
+  padding: 100px;
+}
+
+.progress-bar {
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  .left-bar {
+    position: absolute;
+    border: 3px solid @blue;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-right: none;
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius:100% 50%;
+    transform: rotate(0deg);
+    transform-origin: 100% 50%;
+    //opacity: 0;
+  }
+  .right-bar {
+    position: absolute;
+    border: 3px solid @blue;
+    border-left: none;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top-right-radius: 100% 50%;
+    border-bottom-right-radius:100% 50%;
+    opacity: 0;
+    //transform-origin: 0% 50%;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+  }
+  .value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    color: @blue;
+    font-size: 18px;
+  }
+}
+.btn-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+
+    .btn {
+        display: inline-block;
+        padding: 6px 15px;
+        width: 50px;
+        text-align: center;
+        background: @blue;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {
+            background: @blue - 25;
+        }
+    }
+    .disable {
+        background: #7f8c8d;
+        cursor: default;
+        &:hover {
+            background: #7f8c8d;
+        }
+    }
+}

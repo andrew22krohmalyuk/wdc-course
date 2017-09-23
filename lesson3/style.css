@@ -1,0 +1,144 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.post {
+    margin-bottom: 80px;
+}
+
+.site-header {
+  background: #34495e;
+  height: 70px;
+  width: 100%;
+}
+.wrapper {
+  width: 1000px;/*1100*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-header .logo {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 22px;
+}
+.site-header .menu {
+  float: right;
+}
+.site-header .menu li {
+  display: inline-block;
+}
+.site-header .menu li a {
+  color: #fff;
+  display: block;
+  padding: 26px;
+}
+.site-content {
+  margin-top: 30px;
+}
+.site-content .left-bar {
+  float: left;
+  width: 70%;
+}
+.site-content .right-bar {
+  float: right;
+  width: 25%;
+}
+.post .picture {
+  width: 100%;
+}
+.post .picture img {
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+}
+.post .title {
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.post p {
+  margin-top: 10px;
+  line-height: 170%;
+  font-size: 15px;
+  height: 150px;
+}
+.post .btn-container {
+  margin-top: 10px;
+}
+.post .btn {
+  display: inline-block;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  float: right;
+  margin-top: -30px;
+}
+.post {
+  margin-bottom: 80px;
+}
+
+/* The Beginning of HomeWork */
+.right-bar .rubric,
+.right-bar .archive,
+.right-bar .comments {
+  width: 100%;
+  background: #34495e;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.right-bar .rubric .title,
+.right-bar .archive .title,
+.right-bar .comments .title {
+  color: #fff;
+  padding: 5px;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.right-bar .rubric li,
+.right-bar .archive li,
+.right-bar .comments li {
+}
+
+.right-bar .rubric li a,
+.right-bar .archive li a,
+.right-bar .comments li a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 5px;
+}
+.right-bar .rubric,
+.right-bar .archive,
+.right-bar .comments {
+  margin-bottom: 15px;
+}
+
+/*The end of Homework*/
+
+.right-bar .rubric li a:hover,
+.right-bar .archive li a:hover,
+.right-bar .comments li a:hover{
+  background: #2c3e50
+}
+.post .btn:hover {
+  background-color: #2c3e50;
+}
+.site-header .menu li a:hover {
+  background: #2c3e50;
+}

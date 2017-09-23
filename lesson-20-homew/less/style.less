@@ -1,0 +1,59 @@
+//"out":"../css/style.css"
+
+@blue: #3f6f95;
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  background: #eee;
+  transition: .3s all ease-out;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    height:100px;
+    background: @blue;
+    position: relative;
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 3.7em;
+    }
+}
+.content {
+    box-sizing: border-box;
+    //padding: 25px 50px;
+    .btn {
+        display: inline-block;
+        padding: 10px 24px;
+        background: @blue;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Roboto';
+        margin-top: 20px;
+        &:hover {
+            background: @blue - 25;
+        }
+        &:active {
+            background: @blue + 25;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #fff;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+body {
+    padding: 100px 200px;
+    box-sizing: border-box;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown span.btn {
+    background: #359adc;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px 12px 25px;
+    cursor: pointer;
+    font-family: 'Calibri';
+    border-radius: 3px;
+    position: relative;
+}
+.dropdown > span.btn:after {
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../img/arrow.svg) no-repeat center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    transition: all 0.2s ease-out;
+}
+.dropdown > .btn.active:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.dropdown span.btn:hover {
+    background: #03a9f4;
+}
+.dropdown > ul {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    top: 105%;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-out;
+}
+.dropdown > ul.active {
+    opacity:  1;
+    visibility: visible;
+    transform: translateY(10px);
+}
+.dropdown > ul > li:first-child {
+    position: relative;
+}
+
+.dropdown > ul > li:first-child:before, .dropdown > ul > li:first-child:after {
+    content: '';
+    position: absolute;
+    top: -21px;
+    right: 15px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #eee;
+}
+
+.dropdown > ul > li:first-child:after {
+    border-bottom: 10px solid #fff;
+    top: -20px;
+    right: 15px;
+}
+.dropdown > ul > li > a {
+    display: block;
+    padding: 8px 10px;
+    font-family: 'Calibri';
+    border-bottom: 1px solid #eee;
+    color: #777;
+    position: relative;
+}
+
+.dropdown > ul > li:last-child > a {
+    border: none;
+}
+.dropdown > ul > li > a:hover {
+    background: #eee;
+}
+.dropdown > ul > li > a:hover li:first-child:after:hover {
+
+    /*Почему-то при наведении не затемняется треугольник*/
+
+    /*border-bottom: 10px solid #eee;*/
+
+}
+    /*А здесь я хотел сделать иконку псевдо классами,
+    но не получилось её вращать при нажатии*/
+/*
+.dropdown .btn:after {
+    position: absolute;
+    font-family: FontAwesome;
+    top: 50%;
+    right: 7%;
+    font-size: 10px;
+    transform: translateY(-50%);
+    content: "\f078";
+    transition: all .2s ease-out;
+}
+.rotate:after {
+    top: 45%;
+    transform: rotate(180deg);
+}*/
+#arrow {
+    position: absolute;
+    top: 17px;
+    right: 9px;
+    color: #fff;
+    font-size: 10px;
+    transition: all .2s ease-out;
+}

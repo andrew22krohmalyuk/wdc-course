@@ -1,0 +1,225 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.wrapper {
+  width: 1000px;/*1200*/
+  /*overflow: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.site-header {
+  background: #34495e;
+  height: 70px;
+  width: 100%;
+}
+.site-header .logo {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 22px;
+}
+.site-header .menu {
+  float: right;
+}
+.site-header .menu li {
+  display: inline-block;
+}
+.site-header .menu li a {
+  color: #fff;
+  display: block;
+  padding: 26px;
+}
+.site-header .menu li a:hover {
+  background: #203448;
+}
+.site-content {
+  margin-top: 50px;
+}
+.site-content .left-bar {
+  float: left;
+  width: 70%;
+}
+.site-content .right-bar {
+  float: right;
+  width: 25%;
+
+}
+
+.post {
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dad7d7;
+}
+.post .picture {
+  width: 100%;
+}
+.post .picture img {
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+}
+.post .title {
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.post p {
+  margin-top: 10px;
+  line-height: 170%;
+  font-size: 15px;
+  /*height: 150px;*/
+}
+.post:last-child {
+    margin: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+.post .btn-container {
+  margin-top: 10px;
+}
+.post .btn {
+  display: inline-block;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+.post .btn:hover {
+  background-color: #63809c;
+}
+
+.box {
+  width: 90%;
+  background: #34495e;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.box .content .btn-container .btn {
+    display: inline-block;
+    background: #fff;
+    color: #34495e;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+
+}
+.box .content .btn-container .btn:hover{
+    background: #dcdcdc;
+
+}
+.box .content .btn-container {
+    text-align: right;
+}
+.box .content input {
+    display: block;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.box .title {
+  color: #fff;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+.box .content li a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 5px 5px;
+}
+.box .content li a:hover{
+  background: #203448;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+/*Home 1*/
+.site-footer {
+    clear: both;
+    background: #34495e;
+    margin-top: 50px;
+    padding: 50px 0px;
+    height: 250px;
+}
+.site-footer .block {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.site-footer .block h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.site-footer .block .content p {
+    color: #fff;
+    line-height: 170%;
+    width: 75%;
+}
+.site-footer .block .content ul {
+}
+.site-footer .block .content ul li {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    padding: 8px 0px;
+}
+.site-footer .block .content input {
+    display: block;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.site-footer .block textarea {
+    width: 100%;
+    height: 75px;
+    padding: 8px 15px;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.site-footer .block .btn-container {
+    text-align: right;
+}
+.site-footer .block .btn-container .btn {
+    margin-top: 15px;
+    display: inline-block;
+    background: #fff;
+    color: #34495e;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+}

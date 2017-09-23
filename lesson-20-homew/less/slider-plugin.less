@@ -1,0 +1,72 @@
+//"out":"../css/slider-plugin.css"
+
+.slider-container {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    .slider-row {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 500px;
+        
+        .slide {
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: cover !important;
+            float: left;
+            width: 100vw;
+            height: 500px;
+            overflow: hidden;
+        }
+    }
+    .nav-dots {
+        position: absolute;
+        bottom: 10px;
+        width: 100vw;
+        text-align: center;
+        & > a {
+            display: inline-block;
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            background: rgba(0, 0, 0, .7);
+            margin-right: 5px;
+            cursor: pointer;
+            &.active {
+                background: #fff;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 80px;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        &:hover{
+            background: rgba(0, 0, 0, .1);
+        }
+        & > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
+}

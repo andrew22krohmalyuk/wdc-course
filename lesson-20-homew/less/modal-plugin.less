@@ -1,0 +1,70 @@
+//"out":"../css/modal-plugin.css"
+@blue: #3f6f95;
+//@blue: #2980b9;
+
+.modal-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal {
+        position: absolute;
+        min-width: 315px;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 170%;
+        border-radius: 3px;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-header {
+            background: @blue;
+            height: 35px;
+            position: relative;
+            .modal-title {
+                display: inline-block;
+                padding: 6px;
+                font-size: 24px;
+                color: #fff;
+            }
+            .close {
+                position: absolute;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                background: #fff;
+                border-radius: 50%;
+                cursor: pointer;
+
+            }
+        }
+        .modal-content {
+            background: #fff;
+            padding: 15px 25px;
+        }
+        .modal-footer {
+            background: #fff;
+            height: 36px;
+        }
+    }
+}

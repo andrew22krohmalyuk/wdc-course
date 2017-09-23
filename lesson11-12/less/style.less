@@ -1,0 +1,156 @@
+//"out":"../css/style.css"
+
+@blue: #3498db;
+@white: #fff;
+@border-color: #ccc;
+@text-color: #777;
+@text-hover-color: #000;
+@grey: #bbb;
+@black: #222;
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+  background: #eee;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,a,div {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+.test {
+    clear: both;
+    width: 600px;
+    margin-left: 100px;
+}
+.accordeon {
+    // Вопрос: Контент ездит вместе с аккордеоном, как избавиться от этого?
+    display: block;
+    width: 300px;
+    margin: 50px 100px;
+
+
+    .list-item {
+
+        .item-title {
+            background: @blue;
+            color: @white;
+            padding: 12px 18px;
+            cursor: pointer;
+            border-bottom: 1px solid @white;
+            position: relative;
+        }
+        .item-title:after {
+            position: absolute;
+            content: "";
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../img/arrow.svg) no-repeat center;
+            background-size: contain;
+            width: 10px;
+            height: 10px;
+            transition: all 0.2s ease-out;
+        }
+        .item-title.active:after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .content {
+            padding: 10px 20px;
+            line-height: 170%;
+            box-sizing: border-box;
+            display: none;
+            position: relative;
+
+            ul {
+
+                padding-left: 25px;
+
+                li {
+
+                    a {
+                        cursor: pointer;
+                        color: @text-color;
+                        font-size: 18px;
+
+                        &.active {
+                            color: @blue;
+                        }
+                        &.active:hover {
+                            color: @blue;
+                        }
+                    }
+                    a:hover {
+                        cursor: pointer;
+                        color: @text-hover-color;
+                    }
+                }
+            }
+            ul:after {
+                position: absolute;
+                top: 10px;
+                bottom: 10px;
+                left: 20px;
+                content: "";
+                width: 1px;
+                background: @border-color;
+            }
+        }
+    }
+}
+
+.tab-container {
+    float: left;
+    width: 500px;
+    margin: 50px 100px;
+
+    .tabs {
+
+        overflow: auto;
+
+        .tab {
+            display: inline-block;
+            padding: 12px 20px;
+            border-bottom: 1px solid @grey;
+            float: left;
+            color: @grey;
+            cursor: pointer;
+
+            &.active {
+                color: @black;
+                border-bottom-color: @blue;
+            }
+        }
+    }
+
+    .tab-content {
+            margin-top: 10px;
+            position: relative;
+
+        .content {
+            line-height: 170%;
+            color: @black;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                // Мой вариант решения бага
+                position: static;
+            }
+        }
+
+    }
+
+}
